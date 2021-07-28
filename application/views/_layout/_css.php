@@ -29,3 +29,10 @@
 
 <!-- Google Font -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+<!-- DataTables -->
+<link rel="stylesheet" href="<?php echo base_url();?>bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+
+<!-- SWEET ALERT -->
+<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>app-assets/vendors/css/animate/animate.css"> -->
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>dist/css/sweetalert2.min.css">
+<script src="<?php echo base_url();?>dist/js/sweetalert2.all.min.js"></script>

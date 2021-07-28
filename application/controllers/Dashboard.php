@@ -23,7 +23,7 @@ class Dashboard extends AUTH_Controller {
 		$data['page'] 				= "Pelaporan";
 		$data['judul'] 				= "Riwayat Pelaporan";
 
-		$data['modal_tambah_pelaporan'] = show_my_modal('modals/modal_tambah_pelaporan', 'tambah-pelaporan', $data);
+		$data['modal_tambah_sasaran'] = show_my_modal('modals/modal_tambah_sasaran', 'tambah-sasaran', $data);
 
 		$this->template->views('Pelaporan/pelaporan', $data);
 	}

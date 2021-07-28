@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="<?php echo base_url();?>dist/css/AdminLTE.min.css">
   <!-- iCheck -->
   <link rel="stylesheet" href="<?php echo base_url();?>plugins/iCheck/square/blue.css">
+  <!-- SWEET ALERT -->
+<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>app-assets/vendors/css/animate/animate.css"> -->
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>dist/css/sweetalert2.min.css">
+<script src="<?php echo base_url();?>dist/js/sweetalert2.all.min.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

@@ -52,24 +52,16 @@ function show_err_val($content='', $size='14px') {
 }
 
 	// MODAL
-function show_my_modal($content='', $id='', $data='', $size='centered') {
+function show_my_modal($content='', $id='', $data='', $size='md') {
 	$_ci = &get_instance();
 
 	if ($content != '') {
 		$view_content = $_ci->load->view($content, $data, TRUE);
 
-		return '<div class="modal fade" id="' .$id .'" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-' .$size .'" modal-dialog-centered modal-dialog-scrollable" role="document">
-		<div class="modal-content">   
-		<div class="modal-header">
-		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		<span aria-hidden="true">&times;</span>
-		</button>
-		</div>
-		<div class="modal-body">
-		' .$view_content.'
-		</div>
-		</div>
+		return '<div class="modal fade" id="' .$id .'" role="dialog">
+		<div class="modal-dialog modal-' .$size .'" role="document">
+		<div class="modal-content">
+		' .$view_content .'
 		</div>
 		</div>
 		</div>';
@@ -81,24 +73,17 @@ function show_my_confirm($id='', $class='', $title='Konfirmasi', $yes = 'Ya', $n
 	$_ci = &get_instance();
 
 	if ($id != '') {
-		echo   '<div class="modal fade text-left" id="'.$id.'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel120" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-scrollable" role="document">
+		echo   '<div class="modal fade" id="' .$id .'" role="dialog">
+		<div class="modal-dialog modal-md" role="document">
 		<div class="modal-content">
-		<div class="modal-header bg-danger white">
-		<h5 class="modal-title" id="myModalLabel120">' .$title .'</h5>
-		<span aria-hidden="true">&times;</span>
-		</button>
-		</div>
-		<div class="modal-body">
-
-		<div class="row">
+		<div class="col-md-offset-1 col-md-10 col-md-offset-1 well">
+		<h3 style="display:block; text-align:center;">' .$title .'</h3>
+		
 		<div class="col-md-6">
-		<button class="btn btn-primary form-control ' .$class .'"> <i class="feather icon-check"></i> ' .$yes .'</button>
+		<button class="form-control btn btn-primary ' .$class .'"> <i class="glyphicon glyphicon-ok-sign"></i> ' .$yes .'</button>
 		</div>
-
 		<div class="col-md-6">
-		<button class="btn btn-danger form-control" data-dismiss="modal"> <i class="feather icon-x"></i> ' .$no .'</button>
-		</div>
+		<button class="form-control btn btn-danger" data-dismiss="modal"> <i class="glyphicon glyphicon-remove-sign"></i> ' .$no .'</button>
 		</div>
 		</div>
 		</div>

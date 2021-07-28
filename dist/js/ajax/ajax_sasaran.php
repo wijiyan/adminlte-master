@@ -135,6 +135,5 @@
 	$('#update-sasaran').on('hidden.bs.modal', function () {
 		$('.form-msg').html('');
 	})
-
-
+	
 </script>
